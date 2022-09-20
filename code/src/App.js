@@ -1,12 +1,19 @@
 import React from 'react';
 import data from './data.json';
+import Album from './components/Album';
 
 console.log(data);
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+    
+    {}
+      {data.album.item.map (item => {
+        return <Album key={item.id} data = {item} text = "testing props"/>
+      
+      })}
+
+    </>
   );
 }
