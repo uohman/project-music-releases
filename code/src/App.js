@@ -7,17 +7,19 @@ console.log(data);
 
 export const App = () => {
   return (
+    <>
     <div>
-
-      <Header/>
+      <Header />
+    </div>
+    <div>
       
       {data.albums.items.map(item => {
         return <Album 
         key={item.id} 
-        albumInfo={item} />;
-        
+        items={item} />;
       })}
       
     </div>
+    </>
   );
 };

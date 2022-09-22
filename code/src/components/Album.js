@@ -1,23 +1,24 @@
 import React from "react";
-import Artist from "./Artist"
 
 const Album = (props) => {
-
+ const {images, artists , name} = props.items
   return (
     <div>
-
-      <img src={props.albumInfo.images[1].url} alt="Album cover" />
+      
+      <img src={images[1].url} alt="Album cover" />
           
       <h2>
-      {props.albumInfo.name}
+      {name && name}
       </h2>
 
-      {props.albumInfo.artists.map(item => {
-        return <Artist
-        key={item.id}
-        artistInfo={item} />
-      })}
+      {artists.map((artist) => {
 
+        return(
+          <h3>
+          {artist.name}
+          </h3>
+        )
+      })}      
     </div>
   );
 
