@@ -8,18 +8,18 @@ console.log(data);
 export const App = () => {
   return (
     <>
-    <div>
+    <div className="header" >
       <Header />
     </div>
-    <div>
-      
-      {data.albums.items.map(item => {
-        return <Album 
-        key={item.id} 
-        items={item} />;
-      })}
-      
-    </div>
+    <section className="container">
+      <div className="albums">
+        {data.albums.items.map(item => {
+          return <Album 
+          key={item.id} 
+          items={item} />;
+        })}
+      </div>
+    </section>
     </>
   );
 };
