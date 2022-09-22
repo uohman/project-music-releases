@@ -5,19 +5,24 @@ const Album = (props) => {
   return (
     
     <div className="single-album">
-      
-      <img src={images[1].url} alt="Album cover" />  
-      <h2>
-      {name && name}
-      </h2>
-      {artists.map((artist) => {
 
-        return(
-          <h3>
-          {artist.name}
-          </h3>
-        )
-      })}      
+      <div className="img-container">
+        <img className="album-cover" src={images[1].url} alt="Album cover" />  
+      </div> 
+
+      <h2>
+        {name && name}
+      </h2>
+        
+        {artists.map((artist) => {
+
+          return(
+            <h3>
+            {artist.name}
+            </h3>
+          )
+        })}  
+         
     </div>
     
   );

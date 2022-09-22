@@ -8,6 +8,7 @@ const Header = () => {
             <h1>
             New albums & singles
             </h1>
+            <hr />
         </div>
     )
 }
