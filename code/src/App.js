@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <>
     <div className="header" >
-      
+      <Header />
       
     </div>
     <section className="container">
