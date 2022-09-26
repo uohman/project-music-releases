@@ -9,7 +9,8 @@ export const App = () => {
   return (
     <>
     <div className="header" >
-      <Header />
+      
+      
     </div>
     <section className="container">
       <div className="albums">
@@ -23,3 +24,4 @@ export const App = () => {
     </>
   );
 };
+
